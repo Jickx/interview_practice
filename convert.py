@@ -1,9 +1,5 @@
 def convert(n):
-    result = []
-    for i in range(n + 1):
-        result.append(str(i))
-
-    return f"{''.join(result)}"
+    return ''.join(map(str, range(n + 1)))
 
 
 print(convert(23))
